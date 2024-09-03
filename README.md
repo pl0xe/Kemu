@@ -83,5 +83,3 @@ https://www.josehu.com/technical/2021/01/02/linux-kernel-build-debug.html
 https://stackoverflow.com/questions/28136815/linux-kernel-how-to-obtain-a-particular-version-right-upto-sublevel
 
 https://medium.com/@daeseok.youn/prepare-the-environment-for-developing-linux-kernel-with-qemu-c55e37ba8ade
-# Kemu
-# Kemu
