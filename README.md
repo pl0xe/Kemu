@@ -25,7 +25,7 @@ here and not check out the torvalds version which is only
 for mainline release. After we checkout a commit tag as a 
 new branch for you to  build whatever version you want
 
-`git clone https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/`
+`git clone https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git`
 
 list and filter kernel version/tags
 
@@ -51,7 +51,7 @@ these flags are necessary for QEMU kernel debugging.
 
 `make ARCH=x86_64 menuconfig`
 
-`make j${nproc}`
+`make -j${nproc}`
 
 If you see `Kernel: arch/x86/boot/bzImage is ready  (#1)` thats a success.
 
