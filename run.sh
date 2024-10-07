@@ -1,14 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-# This is a good way to test the kernel we just compiled, if this
-# is ran we should see a kernel panic for no file system
-
-#qemu-system-x86_64 \
-#  -no-kvm \
-#  -kernel arch/x86/boot/bzImage \
-#  -hda /dev/zero \
-#  -append "root=/dev/zero console=ttyS0" \
-#  -serial stdio \
-#  -display none
-
-
+qemu-system-x86_64 -kernel bzImage \
+  -initrd rootfs.img.gz \
+  -nographic \
+  -append "console=ttyS0 init=/bin/sh"
